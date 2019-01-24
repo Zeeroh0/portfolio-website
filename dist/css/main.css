@@ -198,6 +198,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
