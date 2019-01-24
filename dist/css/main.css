@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portraits/example/portrait.jpg");
+      background: url("../img/portraits/tyler/portrait-tyler.jpg");
       border-radius: 50%;
       border: 3px solid #eece1a; }
   .menu .nav-item {
@@ -198,6 +198,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
@@ -266,7 +267,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portraits/example/portrait_small.jpg");
+      background: url("../img/portraits/tyler/portrait-tyler_small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
