@@ -22,3 +22,6 @@ yarn-error.log*
 
 # Visual Studio Code
 /.vscode
+
+# Netlify config
+/.netlify
