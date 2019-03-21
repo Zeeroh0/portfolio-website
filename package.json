@@ -3,12 +3,37 @@
   "version": "1.0.0",
   "description": "Tyler Mitchell's professional portfolio website",
   "main": "index.js",
-  "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
-  },
   "author": "Tyler Mitchell",
   "license": "MIT",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "dev": "webpack-dev-server --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "react-hot-loader": "^4.8.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "workbox-webpack-plugin": "^4.1.1"
+  },
   "dependencies": {
-    "node-sass": "^4.9.4"
+    "@babel/polyfill": "^7.4.0",
+    "node-sass": "^4.9.4",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0"
   }
 }
