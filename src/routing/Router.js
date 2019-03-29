@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { hot } from 'react-hot-loader/root'
 
-import { HomePage } from '../pages'
+import { Home, About } from '../pages'
 
 
 class Router extends React.Component {
@@ -11,7 +11,8 @@ class Router extends React.Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path='/' component={ HomePage } exact />
+          <Route path='/' component={ Home } exact />
+          <Route path='/about' component={ About } exact />
         </Switch>
       </BrowserRouter>
     )
