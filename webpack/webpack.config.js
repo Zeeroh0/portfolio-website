@@ -1,24 +1,16 @@
 /* SHARED/COMMON CONFIG */
 
 const path = require('path')
-const webpack = require('webpack')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   mode: 'development',
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, '../public'),
     filename: 'bundle.js',
     publicPath: '/',
     globalObject: 'this',
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    port: 3333,
-    historyApiFallback: true,
-    hot: true,
   },
   module: {
     rules: [
@@ -30,11 +22,14 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/,
         use: [ 'style-loader', 'css-loader', 'sass-loader' ],
-      }
+      },
+      {
+        test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
+      },
     ]
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new WorkboxPlugin.GenerateSW({
       swDest: 'service-worker.js',
       clientsClaim: true,
