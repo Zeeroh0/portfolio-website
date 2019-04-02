@@ -20,34 +20,34 @@ class NavMenu extends React.Component {
 
     return (
       <header>
-        <div class={`menu-btn ${showMenu ? 'close' : ''}`} onClick={this.handleMenuClick} >
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
+        <div className={`menu-btn ${showMenu ? 'close' : ''}`} onClick={this.handleMenuClick} >
+          <div className="btn-line"></div>
+          <div className="btn-line"></div>
+          <div className="btn-line"></div>
         </div>
     
-        <nav class={`menu ${showMenu ? 'show' : ''}`}>
-          <div class={`menu-branding ${showMenu ? 'show' : ''}`}>
-            <div class="portrait"></div>
+        <nav className={`menu ${showMenu ? 'show' : ''}`}>
+          <div className={`menu-branding ${showMenu ? 'show' : ''}`}>
+            <div className="portrait"></div>
           </div>
-          <ul class={`menu-nav ${showMenu ? 'show' : ''}`}>
-            <li class={`nav-item ${showMenu ? 'show' : ''}`}>
-              <Link to="/" class="nav-link" onClick={this.handleLinkClick} >
+          <ul className={`menu-nav ${showMenu ? 'show' : ''}`}>
+            <li className={`nav-item ${showMenu ? 'show' : ''}`}>
+              <Link to="/" className="nav-link" onClick={this.handleLinkClick} >
                 Home
               </Link>
             </li>
-            <li class={`nav-item ${showMenu ? 'show' : ''}`}>
-              <Link to="/about" class="nav-link" onClick={this.handleLinkClick} >
+            <li className={`nav-item ${showMenu ? 'show' : ''}`}>
+              <Link to="/about" className="nav-link" onClick={this.handleLinkClick} >
                 About
               </Link>
             </li>
-            <li class={`nav-item ${showMenu ? 'show' : ''}`}>
-              <Link to="/portfolio" class="nav-link" onClick={this.handleLinkClick} >
+            <li className={`nav-item ${showMenu ? 'show' : ''}`}>
+              <Link to="/portfolio" className="nav-link" onClick={this.handleLinkClick} >
                 Portfolio
               </Link>
             </li>
-            <li class={`nav-item ${showMenu ? 'show' : ''}`}>
-              <Link to="/contact" class="nav-link" onClick={this.handleLinkClick} >
+            <li className={`nav-item ${showMenu ? 'show' : ''}`}>
+              <Link to="/contact" className="nav-link" onClick={this.handleLinkClick} >
                 Contact
               </Link>
             </li>
